@@ -1,3 +1,4 @@
+// Importa as bibliotecas necessárias do React e do React Native
 import { StatusBar } from "expo-status-bar";
 import {
   StyleSheet,
@@ -8,36 +9,49 @@ import {
   Image,
   ImageBackground,
 } from "react-native";
+
+// Importa estilos definidos externamente no arquivo stylescomponent
 import styles from "./assets/styles/stylescomponent";
+
+// Importa os componentes personalizados do seu aplicativo
 import ComponentForm from "./assets/components/component_form";
 import Componentbtn from "./assets/components/component_btn";
 import Componentimg from "./assets/components/component_img";
 
+// Função principal do aplicativo
 export default function App() {
+
+  // Função btn() é chamada quando o botão é pressionado, exibindo um alerta simples
   btn = () => {
     alert("Logado com Sucesso");
   };
 
   return (
+    // Componente View representa o contêiner principal do aplicativo com o estilo definido em styles.container
     <View style={styles.container}>
+
+      {/* Componente ImageBackground exibe uma imagem de fundo com o estilo definido em styles.image */}
       <ImageBackground
         source={require("./assets/fundo.jpg")}
         resizeMode="cover"
         style={styles.image}
       >
+        {/* Texto simples exibido na tela */}
         teste
-        
-       <ComponentForm/>
 
+        {/* Componente personalizado ComponentForm */}
+        <ComponentForm/>
+
+        {/* Componente personalizado Componentbtn */}
         <Componentbtn/>
 
+        {/* Componente personalizado Componentimg */}
         <Componentimg/>
 
-     
+        {/* Componente StatusBar controla a barra de status do dispositivo */}
         <StatusBar style="auto" />
 
       </ImageBackground>
     </View>
   );
 }
-
