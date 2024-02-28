@@ -3,7 +3,7 @@ import React from 'react';
 import { View, Text, TextInput, Image } from 'react-native';
 
 // Importa os estilos definidos externamente no arquivo stylescomponent
-import styles from '../assets/styles/stylescomponent';
+import styles from '../styles/stylescomponent';
 
 // Define um componente funcional chamado Componentimg
 const Componentimg = () => {
