@@ -3,7 +3,7 @@ import React from 'react';
 import { View, Text, TextInput, Image } from 'react-native';
 
 // Importa os estilos definidos externamente no arquivo stylescomponent
-import styles from '../styles/stylescomponent';
+import styles from '../assets/styles/stylescomponent';
 
 // Define um componente funcional chamado Componentimg
 const Componentimg = () => {
@@ -18,7 +18,7 @@ const Componentimg = () => {
            utilizando a imagem localizada no caminho '../SENAI.png' */}
       <Image
         style={styles.senailogo}
-        source={require('../SENAI.png')} // Ajustado o caminho para a imagem
+        source={require('../assets/images/SENAI.png')} // Ajustado o caminho para a imagem
       />
       
     </View>
