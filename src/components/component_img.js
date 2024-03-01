@@ -10,9 +10,6 @@ const Componentimg = () => {
   return (
     // Componente View representa um contêiner para organizar outros componentes
     <View style={styles.body}>
-      
-      {/* Texto exibido na tela com o estilo definido em styles.titulo */}
-      <Text style={styles.titulo}>Login</Text>
 
       {/* Componente Image exibe uma imagem com o estilo definido em styles.senailogo,
            utilizando a imagem localizada no caminho '../SENAI.png' */}

@@ -4,15 +4,14 @@ import { View, Text, TextInput } from 'react-native';
 
 // Importa os estilos definidos externamente no arquivo stylescomponent
 import styles from '../styles/stylescomponent';
+import Componenttext from './componenttext';
 
 // Define um componente funcional chamado Componentform
 const Componentform = () => {
   return (
     // Componente View representa um contêiner para organizar outros componentes
     <View style={styles.body}>
-      
-      {/* Texto exibido na tela com o estilo definido em styles.titulo */}
-      <Text style={styles.titulo}>Login</Text>
+       <Componenttext/>
 
       {/* Componente View para agrupar os TextInput relacionados ao formulário */}
       <View>
