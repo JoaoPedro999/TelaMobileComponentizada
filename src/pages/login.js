@@ -17,6 +17,7 @@ import styles from "../styles/stylescomponent";
 import ComponentForm from "../components/component_form";
 import Componentbtn from "../components/component_btn";
 import Componentimg from "../components/component_img";
+import ImageBackgroundComponent from "../components/ImageBackgroundComponent";
 
 // Função principal do aplicativo
 export default function App() {
@@ -29,27 +30,9 @@ export default function App() {
   return (
     // Componente View representa o contêiner principal do aplicativo com o estilo definido em styles.container
     <View style={styles.container}>
-
-      {/* Componente ImageBackground exibe uma imagem de fundo com o estilo definido em styles.image */}
-      <ImageBackground
-        source={require("../assets/images/fundo.jpg")}
-        resizeMode="cover"
-        style={styles.image}
-      >
-
-        {/* Componente personalizado ComponentForm */}
-        <ComponentForm/>
-
-        {/* Componente personalizado Componentbtn */}
-        <Componentbtn/>
-
-        {/* Componente personalizado Componentimg */}
-        <Componentimg/>
-
-        {/* Componente StatusBar controla a barra de status do dispositivo */}
-        <StatusBar style="auto" />
-
-      </ImageBackground>
+     <ImageBackgroundComponent/>
+      {/* Componente StatusBar controla a barra de status do dispositivo */}
+      <StatusBar style="auto" />
     </View>
   );
 }

@@ -37,13 +37,6 @@ const styles = StyleSheet.create({
     height: 50,
     bottom: 400,
   },
-  image: {
-    flex: 1,
-    width: "100%",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-
 });
 
 export default styles;
