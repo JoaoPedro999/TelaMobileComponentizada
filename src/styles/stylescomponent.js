@@ -19,11 +19,17 @@ const styles = StyleSheet.create({
     opacity: "80%",
   },
   button: {
-    color: "white",
     backgroundColor: "black",
     fontSize: 20,
-    width: 50,
-    height: 25,
+    width: 150,
+    height: 50,
+    opacity: 0.80,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  login: {
+    color: "white",
+    fontSize: 20,
   },
   titulo: {
     fontWeight: "bold",
